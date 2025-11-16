@@ -60,8 +60,8 @@ for ($i=1; $i<@directories-1; $i++) {
     close OUT;
 
     system "gnuplot $Bin/vef.gnu";
-    rename "vaspout.eps" , "vaspout$i.eps";
-    system "mv vaspout$i.eps ../vaspgr";
+    rename "vaspout.png" , "vaspout$i.png";
+    system "mv vaspout$i.png ../vaspgr";
 
     if($zipped) {
        system "$zip -9 OUTCAR &";
