@@ -1,4 +1,4 @@
 # vtst-scripts
-Scripts from the VASP Transition State Theory (VTST) Tools developed by the Henkelman group at UT Austin: https://theory.cm.utexas.edu/vtsttools
+Perl scripts from the VASP transition state theory (VTST) tools, developed and mantained by the Henkelman group at UT Austin. These scripts help to set up and analyse data from DFT calculations in VASP compiled with the VTST source code, used for calculating transition rates, activation barriers, and minimum energy reaction pathways in solid state systems. Some modifications have been made for easier usage and nicer looking plots, especially for Windows users where some of the output file formats are not so accessible.
 
-Some modifications have been made for easier usage and nicer looking plots, especially for WinSCP users.
+Original code at https://theory.cm.utexas.edu/vtsttools
