@@ -1,16 +1,14 @@
-set grid
-set pointsize 0.8
-set ytics nomirror
-set y2tics 
 set xlabel "Ionic step no."
-set ylabel "Force [eV/A]"
+set ylabel "Force [eV/Å]"
 set y2label "Energy [eV]"
-set terminal pngcairo 
+set tics out nomirror
+set y2tics out nomirror
+set grid
+set pointsize 0.8 
+set key right top
 set log y
+set terminal pngcairo 
 set output "vaspout.png"
-plot "fe.dat" u 1:2 axis x1y1 t "Max force" w lp lt 1 lw 2.4 pt 7 ps 0.9, \
-     "fe.dat" u 1:3 axis x1y2 t "Energy" w lp lt 3 lw 2.4 pt 7 ps 0.9
 
-
-#set output
-#set terminal x11
+plot "fe.dat" u 1:2 axis x1y1 t "Max force" w l lt rgb "#4169e1" lw 2.4, \
+     "fe.dat" u 1:3 axis x1y2 t "Energy" w l lt rgb "#ff4500" lw 2.4
